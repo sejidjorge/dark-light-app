@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import './globals.css'
 import GlobalStyle from './styles/global'
 
@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <GlobalStyle />
-      <body>
-        {children}
-        </body>
+      <body>{children}</body>
     </html>
   )
 }

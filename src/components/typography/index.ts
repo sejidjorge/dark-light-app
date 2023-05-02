@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Typography = {
   h1: styled.h1`
@@ -66,6 +66,6 @@ const Typography = {
     font-size: 10px;
     letter-spacing: 1.5px;
   `,
-};
+}
 
-export default Typography;
+export default Typography
