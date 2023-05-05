@@ -1,10 +1,15 @@
 'use client';
-import Typography from '@/components/typography';
+import LoadingCircle from '@/components/loadingCircle';
+import { LoadingText } from '@/components/loadingCircle/styles';
+import { CardLoading, ContainerBody } from '@/styles/loading_styles';
 
 export default function Home() {
   return (
-    <div>
-      <Typography.h1>teste</Typography.h1>
-    </div>
+    <ContainerBody>
+      <CardLoading>
+        <LoadingCircle />
+        <LoadingText>Carregando...</LoadingText>
+      </CardLoading>
+    </ContainerBody>
   );
 }
