@@ -1,6 +1,5 @@
 'use client'
-import './globals.css'
-import GlobalStyle from './styles/global'
+import GlobalStyle from '@/styles/global';
 
 export const metadata = {
   title: 'Create Next App',
