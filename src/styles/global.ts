@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 --font-sans: 'Roboto', sans-serif;
@@ -14,6 +14,6 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         font: --font-mono;
     }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
