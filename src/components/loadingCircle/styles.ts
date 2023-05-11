@@ -20,7 +20,7 @@ const TextAnimate = keyframes`
 `;
 
 export const LoadingText = styled(Typography.overline)`
-  color: #eee;
+  color: ${({ theme }) => theme.primaryText};
   text-transform: uppercase;
   animation: ${TextAnimate} 1s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite;
 `;
@@ -46,7 +46,7 @@ export const Straight = styled.div`
     content: '';
     position: absolute;
     width: 15%;
-    border-bottom: 3px solid #eee;
+    border-bottom: 3px solid ${({ theme }) => theme.primaryText};
     transform: rotate(45deg);
   }
 `;
@@ -74,7 +74,7 @@ export const Curve = styled.div`
     width: 45px;
     height: 10px;
     border: solid 3px transparent;
-    border-top-color: #eee;
+    border-top-color: ${({ theme }) => theme.primaryText};
     border-radius: 50%/10px 10px 0 0;
     z-index: 90001;
   }
@@ -87,7 +87,7 @@ export const Center = styled.div`
   width: 60%;
   height: 60%;
   border-radius: 100%;
-  border: 3px solid #eee;
+  border: 3px solid ${({ theme }) => theme.primaryText};
 `;
 
 export const Inner = styled.div`
@@ -117,7 +117,7 @@ export const Inner = styled.div`
     height: 0;
     border: 6px solid transparent;
     border-bottom-width: 11px;
-    border-bottom-color: #eee;
+    border-bottom-color: ${({ theme }) => theme.primaryText};
   }
 `;
 

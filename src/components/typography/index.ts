@@ -52,8 +52,8 @@ const Typography = {
     letter-spacing: 0.25px;
   `,
   button: styled.button`
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     letter-spacing: 1.25px;
   `,
   caption: styled.p`
