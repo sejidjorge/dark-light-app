@@ -14,8 +14,8 @@ interface NavigationTypes {
   open: boolean;
 }
 
-export const Navigation = styled.div<NavigationTypes>`
-  width: ${({ open }) => (open ? '10.75rem' : ' 3.75rem')};
+export const Nav = styled.div<NavigationTypes>`
+  width: ${({ open }) => (open ? '14.75rem' : ' 3.75rem')};
   height: calc(100vh - 1.25rem);
   background-color: ${({ theme }) => theme.primary};
   border-radius: 0.75rem;
@@ -27,14 +27,13 @@ export const Navigation = styled.div<NavigationTypes>`
 
 export const Content = styled.div<NavigationTypes>`
   width: ${({ open }) =>
-    open ? 'calc(100vw - 11.375rem)' : 'calc(100vw - 4.375rem)'};
+    open ? 'calc(100vw - 14.375rem)' : 'calc(100vw - 4.375rem)'};
   max-height: calc(100vh - 1.25rem);
   min-height: calc(100vh - 1.25rem);
 `;
 
 export const ContainerNavigation = styled.div<NavigationTypes>`
   width: ${({ open }) => (open ? '100%' : 'auto')};
-  background-color: red;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;

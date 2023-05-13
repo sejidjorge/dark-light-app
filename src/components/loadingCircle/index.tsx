@@ -1,3 +1,4 @@
+import React from 'react';
 import { Center, Curve, Inner, PsoLoad, Straight } from './styles';
 
 export default function LoadingCircle() {

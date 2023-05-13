@@ -1,11 +1,12 @@
 'use client';
-import Layout from '@/components/layout';
+import Navigation from '@/components/navigation';
 import GlobalStyle from '@/styles/global';
 import { theme } from '@/styles/theme';
-import { usePathname } from 'next/navigation';
-import { ReactNode } from 'react';
-import { ThemeProvider } from 'styled-components';
 import { Roboto } from 'next/font/google';
+import { usePathname } from 'next/navigation';
+import React, { ReactNode } from 'react';
+import { ThemeProvider } from 'styled-components';
+import StyledComponentsRegistry from './registry';
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,10 +19,13 @@ const roboto = Roboto({
   weight: ['100', '400', '500'],
 });
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export interface RootLayoutTypes {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutTypes) {
   const publicRoute = ['/', '/login', 'recoverPassword/'];
   const pathname = usePathname();
-  console.log(pathname);
 
   function verifyRouter() {
     const currentRoute = pathname;
@@ -30,12 +34,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="pt-BR" className={roboto.className}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <body>
-          {verifyRouter() ? <>{children}</> : <Layout>{children}</Layout>}
-        </body>
-      </ThemeProvider>
+      <StyledComponentsRegistry>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <body>
+            {verifyRouter() ? (
+              <>{children}</>
+            ) : (
+              <Navigation>{children}</Navigation>
+            )}
+          </body>
+        </ThemeProvider>
+      </StyledComponentsRegistry>
     </html>
   );
 }
