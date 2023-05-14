@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import LoadingCircle from '@/components/loadingCircle';
 import { LoadingText } from '@/components/loadingCircle/styles';

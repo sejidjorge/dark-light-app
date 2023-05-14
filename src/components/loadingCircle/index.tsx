@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Center, Curve, Inner, PsoLoad, Straight } from './styles';
 

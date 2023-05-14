@@ -1,3 +1,4 @@
+'use client';
 import Navigation from '@/components/navigation';
 import GlobalStyle from '@/styles/global';
 import { theme } from '@/styles/theme';
