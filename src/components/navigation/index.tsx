@@ -1,3 +1,5 @@
+'use client';
+
 import {
   mdiAccountGroupOutline,
   mdiChartBarStacked,
@@ -5,10 +7,10 @@ import {
   mdiMenu,
 } from '@mdi/js';
 import Icon from '@mdi/react';
+import { useRouter } from 'next/navigation';
 import { ReactNode, useState } from 'react';
 import { Button } from '../buttons';
 import { Container, ContainerNavigation, Content, Nav } from './styles';
-import { useRouter } from 'next/navigation';
 
 interface NavagationProps {
   children: ReactNode;
