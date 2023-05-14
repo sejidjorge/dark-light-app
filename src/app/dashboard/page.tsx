@@ -1,4 +1,3 @@
-'use client';
 import { Button } from '@/components/buttons';
 import Typography from '@/components/typography';
 
