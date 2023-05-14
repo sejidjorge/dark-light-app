@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render the button component 1`] = `
+.c0 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.0781rem;
+  -moz-letter-spacing: 0.0781rem;
+  -ms-letter-spacing: 0.0781rem;
+  letter-spacing: 0.0781rem;
+}
+
+.c1 {
+  width: auto;
+  height: 2.125rem;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid;
+  border-color: transparent;
+  cursor: pointer;
+  padding: 0.3125rem 0.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  gap: 0.3125rem;
+  color: #a1a6ad;
+  border-radius: 0.5rem;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #222836;
+  color: #f7fafc;
+}
+
+<button
+  class="c0 c1"
+>
+  Click me
+</button>
+`;

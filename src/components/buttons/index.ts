@@ -30,15 +30,16 @@ export const Button = styled(Typography.button)<ButtonTypes>`
       ? ({ theme }) => theme.border
       : ({ color }) => colorDefine(color!)};
   appearance: none;
-  border: 1px solid
-    ${({ disabled }) =>
-      disabled
-        ? ({ theme }) => theme.border
-        : ({ color }) => colorDefine(color!)};
+  border: 1px solid;
+  border-color: ${({ disabled }) =>
+    disabled
+      ? ({ theme }) => theme.border
+      : ({ color }) => colorDefine(color!)};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   padding: ${({ icon }) => (icon ? '0.25rem' : '0.3125rem 0.625rem')};
   display: flex;
   align-items: center;
+  appearance: none;
   justify-content: ${({ icon }) => (icon ? 'center' : 'start')};
   gap: 0.3125rem;
   color: ${({ theme }) => theme.secondaryText};

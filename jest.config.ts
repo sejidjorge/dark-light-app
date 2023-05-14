@@ -10,5 +10,8 @@ export default {
     '^.+\\.(js|ts)$': 'ts-jest',
     '^.+\\.(jsx|tsx)$': 'babel-jest',
   },
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-dom/extend-expect',
+    './setupTests.ts',
+  ],
 };
