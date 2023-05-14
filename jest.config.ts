@@ -8,7 +8,7 @@ export default {
   testMatch: ['**/__tests__/**/*.test.(js|jsx|ts|tsx)'],
   transform: {
     '^.+\\.(js|ts)$': 'ts-jest',
-    '^.+\\.(jsx|tsx)$': 'babel-jest',
+    '^.+\\.(jsx|tsx)$': '@swc/jest',
   },
   setupFilesAfterEnv: [
     '@testing-library/jest-dom/extend-expect',

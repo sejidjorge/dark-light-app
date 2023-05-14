@@ -30,6 +30,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/navigation/layout"
-  ],
+, "swc.config.js"  ],
   "exclude": ["node_modules"]
 }

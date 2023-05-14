@@ -1,13 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import {
-  LoadingText,
-  Straight,
-  Curve,
-  Center,
-  Inner,
-  PsoLoad,
-} from '../styles';
+import { Center, Curve, Inner, LoadingText, PsoLoad, Straight } from '@/components/loadingCircle/styles';
+
 
 describe('Loading component', () => {
   it('renders LoadingText component', () => {
