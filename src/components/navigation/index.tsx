@@ -40,11 +40,7 @@ export default function Navigation({ children }: NavagationProps) {
           icon
           onClick={() => setIsOpen((isOpen) => !isOpen)}
         >
-          {isOpen ? (
-            <Icon path={mdiClose} size={1} />
-          ) : (
-            <Icon path={mdiMenu} size={1} />
-          )}
+          <Icon path={isOpen ? mdiClose : mdiMenu} size={0.8} />
         </Button>
         <ContainerNavigation open={isOpen}>
           {routes.map(({ label, link, icon }) => (
@@ -55,7 +51,7 @@ export default function Navigation({ children }: NavagationProps) {
               icon={!isOpen}
               onClick={() => router.push(link)}
             >
-              <Icon path={icon} size={1} />
+              <Icon path={icon} size={0.8} />
               {isOpen && `${label}`}
             </Button>
           ))}
